@@ -1,5 +1,5 @@
 function assignStages(artists, stages) {
-  for (let artist of artists) {
+  for (let artist of artists) {  //inversion des deux boucles on commence par boucler sur les artistes sinon probleme d'assignation ou certain artiste n'ont pas de stage
     for (let stage of stages) {
       if (stage.genres.includes(artist.genre)) {
         artist.stage = stage.id;
